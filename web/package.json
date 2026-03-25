@@ -1,0 +1,15 @@
+{
+  "name": "pr-todo-list",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:https": "http-server -S -C .cert/cert.pem -K .cert/key.pem -p 3000 -o",
+    "deploy": "gh-pages",
+    "cert": "rm -rf .cert && mkdir -p .cert && mkcert -key-file ./.cert/key.pem -cert-file ./.cert/cert.pem 'localhost'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
